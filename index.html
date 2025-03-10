@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Inserir Foto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <img id="minhaImagem" src="" alt="Logo APAE">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+    <title>Cadastro de Alunos APAE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cadastro de Alunos APAE</h1>
+
+    <div id="cadastro">
+        <h2>Cadastro de Aluno</h2>
+        <form id="formCadastro">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="matricula">Matrícula:</label>
+            <input type="text" id="matricula" name="matricula"><br><br>
+
+            <label for="contato">Contato:</label>
+            <input type="tel" id="contato" name="contato"><br><br>
+
+            <label for="documento">Documento:</label>
+            <input type="text" id="documento" name="documento"><br><br>
+
+            <button type="button" onclick="cadastrarAluno()">Cadastrar</button>
+        </form>
+    </div>
+
+    <div id="presenca">
+        <h2>Presença</h2>
+        <label for="alunoPresenca">Aluno:</label>
+        <select id="alunoPresenca"></select>
+        <button type="button" onclick="marcarPresenca()">Presente</button>
+        <button type="button" onclick="marcarAusencia()">Ausente</button>
+    </div>
+
+    <div id="listaAlunos">
+        <h2>Lista de Alunos</h2>
+        <ul id="alunosCadastrados"></ul>
+    </div>
+
+    <div id="relatorios">
+        <h2>Relatórios</h2>
+        <label for="relatorioNome">Nome:</label>
+        <input type="text" id="relatorioNome">
+        <label for="relatorioData">Data:</label>
+        <input type="date" id="relatorioData">
+        <button type="button" onclick="gerarRelatorio()">Gerar Relatório</button>
+        <div id="resultadoRelatorio"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
